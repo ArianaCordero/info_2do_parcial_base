@@ -1,9 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://dimhfx4c1igfv"]
+[gd_scene load_steps=4 format=3 uid="uid://dimhfx4c1igfv"]
 
-[ext_resource type="Script" uid="uid://bgko3xthbsvt6" path="res://scripts/piece.gd" id="1_vm0sw"]
+[ext_resource type="Script" uid="uid://dheasynf74po8" path="res://scripts/piece.gd" id="1_vm0sw"]
+[ext_resource type="Texture2D" uid="uid://d1bhv6fqx04ed" path="res://assets/pieces/Blue Adjacent.png" id="2_s58gp"]
+
+[sub_resource type="Environment" id="Environment_s58gp"]
+background_mode = 3
+glow_enabled = true
+glow_blend_mode = 1
 
 [node name="Piece" type="Node2D"]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_vm0sw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 1.14115, 1.26, 1)
+self_modulate = Color(0, 1, 2, 1)
+position = Vector2(-10, -88)
+texture = ExtResource("2_s58gp")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_s58gp")

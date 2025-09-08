@@ -1,16 +1,28 @@
-[gd_scene load_steps=6 format=3 uid="uid://bt33j5dwxano3"]
+[gd_scene load_steps=9 format=3 uid="uid://bt33j5dwxano3"]
 
 [ext_resource type="Texture2D" uid="uid://bacqucona7fm3" path="res://assets/top_ui.png" id="1_j7odh"]
-[ext_resource type="Script" uid="uid://pvllt7hbni2e" path="res://scripts/top_ui.gd" id="2_0qkha"]
+[ext_resource type="Script" uid="uid://wbqp2mhrr31v" path="res://scripts/top_ui.gd" id="2_0qkha"]
 [ext_resource type="FontFile" uid="uid://b25431rxog83j" path="res://assets/fonts/Kenney Blocks.ttf" id="2_pei76"]
 
+[sub_resource type="SystemFont" id="SystemFont_sh3ln"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_yrpvj"]
-font = ExtResource("2_pei76")
-font_size = 24
+line_spacing = 3.2
+font = SubResource("SystemFont_sh3ln")
+font_size = 30
+font_color = Color(0.991494, 0.248198, 0.693461, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_8bjlm"]
 font = ExtResource("2_pei76")
 font_size = 60
+font_color = Color(0.992157, 0.247059, 0.694118, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_0ntmh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xoi7l"]
+font = SubResource("SystemFont_0ntmh")
+font_size = 22
+font_color = Color(0.992157, 0.247059, 0.694118, 1)
 
 [node name="top_ui" type="TextureRect"]
 offset_right = 576.0
@@ -50,8 +62,13 @@ size_flags_vertical = 5
 text = "00"
 label_settings = SubResource("LabelSettings_8bjlm")
 horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer"]
+[node name="goal_label" type="Label" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(158, 124)
+layout_direction = 2
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 5
+text = "Objetivo:
+000"
+label_settings = SubResource("LabelSettings_xoi7l")
+horizontal_alignment = 1

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://02i87iw68fxc"]
+
+[ext_resource type="PackedScene" uid="uid://dimhfx4c1igfv" path="res://scenes/piece.tscn" id="1_2fya5"]
+
+[node name="BlueAdjacent" instance=ExtResource("1_2fya5")]
+
+[node name="Sprite2D" parent="." index="0"]
+material = null
