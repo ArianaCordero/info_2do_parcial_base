@@ -21,3 +21,7 @@ func normal():
 func set_piece_type(new_type: String):
 	type = new_type
 	grid.update_piece_sprite(self)
+
+
+func _on_sprite_2d_frame_changed() -> void:
+	pass # Replace with function body.

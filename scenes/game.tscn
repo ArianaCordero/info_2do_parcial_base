@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cruh8bbcfvyvr"]
 
-[ext_resource type="Texture2D" uid="uid://brp4euwugc18f" path="res://assets/background.png" id="1_blg2x"]
+[ext_resource type="Texture2D" uid="uid://dypekdkp1qly" path="res://assets/background.jpg" id="1_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://bt33j5dwxano3" path="res://scenes/top_ui.tscn" id="2_wrbvl"]
 [ext_resource type="PackedScene" uid="uid://imuf4cf0yqn1" path="res://scenes/bottom_ui.tscn" id="3_js5d8"]
 [ext_resource type="Script" uid="uid://gcd1tukf6px6" path="res://scripts/grid.gd" id="4_4jr62"]
@@ -10,7 +10,7 @@
 [node name="background" type="TextureRect" parent="."]
 offset_right = 576.0
 offset_bottom = 1024.0
-texture = ExtResource("1_blg2x")
+texture = ExtResource("1_lbhrr")
 
 [node name="top_ui" parent="." instance=ExtResource("2_wrbvl")]
 

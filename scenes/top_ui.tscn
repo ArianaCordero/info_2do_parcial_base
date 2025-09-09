@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://b25431rxog83j" path="res://assets/fonts/Kenney Blocks.ttf" id="2_pei76"]
 
 [sub_resource type="SystemFont" id="SystemFont_sh3ln"]
+subpixel_positioning = 0
 
 [sub_resource type="LabelSettings" id="LabelSettings_yrpvj"]
 line_spacing = 3.2
@@ -18,6 +19,7 @@ font_size = 60
 font_color = Color(0.992157, 0.247059, 0.694118, 1)
 
 [sub_resource type="SystemFont" id="SystemFont_0ntmh"]
+subpixel_positioning = 0
 
 [sub_resource type="LabelSettings" id="LabelSettings_xoi7l"]
 font = SubResource("SystemFont_0ntmh")

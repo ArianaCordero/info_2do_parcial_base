@@ -139,10 +139,12 @@ func grid_to_pixel(column, row):
 	var new_y = y_start - offset * row
 	return Vector2(new_x, new_y)
 	
-func pixel_to_grid(pixel_x, pixel_y):
-	var new_x = round((pixel_x - x_start) / offset)
-	var new_y = round((pixel_y - y_start) / -offset)
-	return Vector2(new_x, new_y)
+func pixel_to_grid(pixel_x: float, pixel_y: float) -> Vector2i:
+	var gx := int(floor((pixel_x - x_start) / float(offset) + 0.5))
+	var gy := int(floor((y_start - pixel_y) / float(offset)))
+	gx = clamp(gx, 0, width - 1)
+	gy = clamp(gy, 0, height - 1)
+	return Vector2i(gx, gy)
 	
 func in_grid(column, row):
 	return column >= 0 and column < width and row >= 0 and row < height
